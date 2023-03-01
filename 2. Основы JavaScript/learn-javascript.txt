@@ -1,0 +1,72 @@
+11.Логические операторы
+Задача№1 alert( null || 2 || undefined ); //2
+Задача№2 alert( alert(1) || 2 || alert(3) ); //2
+Задача№3 alert( 1 && null && 2 ); //null
+Задача№4 alert( alert(1) && alert(2) ); //undefined
+Задача№5 alert( null || 2 && 3 || 4 ); //3
+Задача№6 if (age >= 14 && age <= 90)
+Задача№7 if (!(age >= 14 && age <= 90))
+	 if (age < 14 || age > 90)
+Задача№8 if (-1 || 0) alert( 'first' ); // -1, выполнится
+	 if (-1 && 0) alert( 'second' ); // 0, не выполнится
+	 if (null || -1 && 1) alert( 'third' ); // 1, выполнится
+Задача№9 let login = prompt("Введите логин:", '');
+
+	 if (login === 'Админ') {
+
+  	 	let pass = prompt('Введите пароль:', '');
+
+  	 	if (pass === 'Я главный') {
+    	 	alert( 'Здравствуйте!' );
+  	 	} else if (pass !== 'Я главный') {
+    	 	alert( 'Неверный пароль' );
+  	 	}
+
+	 } else if (login === '' || login === null) {
+  	 alert( 'Отменено' );
+	 } else {
+  	 alert( "Я вас не знаю" );
+	 }
+
+13.Циклы while и for
+Задача№1 let i = 3;
+	 while (i) { // while(i != 0)
+  	 alert( i-- ); // будет выводится 3, 2, 1
+	 }
+
+Задача№2 
+let i = 0;
+while (++i < 5) alert( i ); // 1, 2, 3, 4 префиксная
+
+let i = 0;
+while (i++ < 5) alert( i ); // 1, 2, 3, 4, 5 постфиксная
+
+Задача№3
+for (let i = 0; i < 5; ++i) alert( i ); // 0, 1, 2, 3, 4
+
+for (let i = 0; i < 5; i++) alert( i ); // 0, 1, 2, 3, 4
+
+Задача№4
+for (let i = 2; i <= 10; i++) {
+  if (i % 2 == 0) {
+    alert( i );
+  }
+}
+
+Задача№5
+let i = 0;
+while (i < 3) {
+  alert( `number ${i}!` );
+  i++;
+}
+
+
+
+
+
+
+
+
+
+
+
